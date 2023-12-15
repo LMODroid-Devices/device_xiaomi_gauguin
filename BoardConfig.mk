@@ -45,6 +45,7 @@ BOARD_KERNEL_CMDLINE := \
     swiotlb=2048 \
     cgroup.memory=nokmem,nosocket \
     loop.max_part=7
+BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_BOOTIMG_HEADER_VERSION := 2
@@ -54,7 +55,6 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 TARGET_KERNEL_SOURCE := kernel/xiaomi/gauguin
 TARGET_KERNEL_CONFIG := gauguin_defconfig
-TARGET_KERNEL_LLVM_BINUTILS := true
 
 # Platform
 TARGET_BOARD_PLATFORM := lito
