@@ -167,8 +167,7 @@ PRODUCT_PACKAGES += \
     memtrack.lito
 
 PRODUCT_PACKAGES += \
-    libtinyxml \
-    libvulkan \
+    libvulkan
 
 PRODUCT_PACKAGES += \
     vendor.display.config@1.11.vendor \
@@ -242,7 +241,6 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1.vendor \
     android.hardware.health-service.qti \
     android.hardware.health-service.qti_recovery
 
@@ -424,9 +422,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor
-
-PRODUCT_PACKAGES += \
-    libxml2
 
 # Sensors
 PRODUCT_PACKAGES += \
